@@ -10,7 +10,7 @@ public class Main {
 
         String filename = "bundesliga-1819.csv";
 
-        String line;  
+        String line;
 
         League league = new League();
 
@@ -38,7 +38,7 @@ public class Main {
         public static void printTable(List<Team> teams) {
 
             for (Team team : teams) {
-                System.out.println();
+                System.out.println(""+ team.getName()+ " " +team.getPoints()+ " " +team.getWins()+ " "+ team.getDraws()+ " "+ team.getDefeats()+ " " + team.getGoalsShot()+ " " + team.getGoalDifference());
             }
         }
     }
