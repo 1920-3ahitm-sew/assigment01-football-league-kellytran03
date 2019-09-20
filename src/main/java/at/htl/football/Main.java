@@ -17,7 +17,6 @@ public class Main {
         try (Scanner scanner = new Scanner(new FileReader(filename))) {
             scanner.nextLine();
 
-
             while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
                 String[] parts = line.split(";");
@@ -27,7 +26,7 @@ public class Main {
                 String guestTeam = parts[2];
                 int homeGoals = Integer.parseInt(parts[3]);
                 int guestGoals = Integer.parseInt(parts[4]);
-
+                league.addMatchResult(new Match(date,homeTeam,guestTeam,homeGoals,guestGoals));
 
             }
         } catch (FileNotFoundException e) {
@@ -38,6 +37,9 @@ public class Main {
 
         public static void printTable(List<Team> teams) {
 
+            for (Team team : teams) {
+                System.out.println();
+            }
         }
     }
-}
+

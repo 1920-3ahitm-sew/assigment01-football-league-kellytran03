@@ -7,7 +7,7 @@ public class Match {
     private int homeGoals;
     private int guestGoals;
 
-    public Match(String homeName, String guestName, int homeGoals, int guestGoals) {
+    public Match(int date, String homeName, String guestName, int homeGoals, int guestGoals) {
         this.homeName = homeName;
         this.guestName = guestName;
         this.homeGoals = homeGoals;
