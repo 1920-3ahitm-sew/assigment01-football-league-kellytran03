@@ -10,7 +10,7 @@ public class Main {
 
         String filename = "bundesliga-1819.csv";
 
-        String line;
+        String line;  
 
         League league = new League();
 
